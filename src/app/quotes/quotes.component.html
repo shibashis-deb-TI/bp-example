@@ -1,0 +1,7 @@
+<h1 *ngIf="!isSourceDSP">Quotes Page Header!</h1>
+<section class="tabs">
+  <div><a [routerLink]="'customer'">Customer</a></div>
+  <div><a [routerLink]="'pricing'">Pricing</a></div>
+  <div><a (click)="gotoPricingFromDSP()">Pricing from DSP</a></div>
+</section>
+<router-outlet></router-outlet>
