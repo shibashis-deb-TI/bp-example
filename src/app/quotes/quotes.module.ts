@@ -6,9 +6,11 @@ import { quotesRoutes } from './quotes.routing';
 import { RouterModule } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
 import { QuotesService } from './quotes.service';
+import { HelpComponent } from './help/help.component';
+import { BsModalService } from 'ngx-bootstrap/modal';
 
 @NgModule({
-  declarations: [PricingComponent, QuotesComponent, CustomerComponent],
+  declarations: [PricingComponent, QuotesComponent, CustomerComponent, HelpComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(quotesRoutes)
